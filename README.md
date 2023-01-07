@@ -24,6 +24,8 @@ In the folder *mars_web_analysis* are the completed challenge files.
 
 # **Results**
 
+*Deliverable 1: Mars News*
+
 Article titles and preview text were successfully scraped and stored into a pyton list. Below are the first three articles.
 
     [
@@ -40,6 +42,26 @@ Article titles and preview text were successfully scraped and stored into a pyto
             "preview": "The agency\u2019s Perseverance rover will establish the first sample depot on Mars."
     ]
 
+*Deliverable 2: Mars Weather*
+
+Two files are provided for this part of the challenge. One of them reads the table using pandas read.html to collect the data into a dataframe. The other uses a loop to iterate through the scraped data in order to create a python list and then dataframe.
+
+Graphs were then created and questions answered from the analysis.
+
+1. How many months exist on Mars? **12**
+2. How many Martian (and not Earth) days worth of data exist in the scraped dataset? **1867**
+3. What are the coldest and the warmest months on Mars (at the location of Curiosity)? To answer this question:
+    **The average minimum temperature on Mars is highest in month 8 at -68.38 and lowest in month 3 at -83.31.**
+    * Find the average the minimum daily temperature for all of the months.
+    * Plot the results as a bar chart. **See below**
+4. Which months have the lowest and the highest atmospheric pressure on Mars? To answer this question:
+    **Martian atmospheric pressure is highest in months 2 and 9, and lowest in month 6 as seen in the graph below.**
+    * Find the average the daily atmospheric pressure of all the months.
+    * Plot the results as a bar chart. **See below**
+5. About how many terrestrial (Earth) days exist in a Martian year? To answer this question: **Approximately 683**
+    * Consider how many days elapse on Earth in the time that Mars circles the Sun once.
+    * Visually estimate the result by plotting the daily minimum temperature. **See below**
+
 The average minimum temperature on Mars is highest in month 8 at -68.38 and lowest in month 3 at -83.31.
 
 ![Mars minimum temperature](mars_web_analysis/Output/martian_min_temp.png)
@@ -55,9 +77,6 @@ This graph was used to calculate the number of days in a Martian year. It is ass
 ![Total Temp Data](mars_web_analysis/Output/martian_min_temp_total.png)
 
 
-
 # **Comments and Thoughts**
 
-
-
-Overall, I enjoyed this challenge and learned a great deal.
+I learned a lot from this challenge. My biggest struggle was getting my table into a dataframe using a loop. It was super easy to just use the pd.read.html, but I struggled to get my loop right. Our TA Grace was super helpful, and gave me some guidance that totally opened my eyes. She shared a snippet of code that not only helped me with the challenge, but completely opened my eyes to loops and python lists. All of a sudden it came to me, and I totally got it. Everything from the beginning of class made so much more sense. I think I'm going to struggle far less with those loos in the future. Thank you Grace!!!!!
