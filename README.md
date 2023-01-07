@@ -26,7 +26,7 @@ In the folder *mars_web_analysis* are the completed challenge files.
 
 *Deliverable 1: Mars News*
 
-Article titles and preview text were successfully scraped and stored into a pyton list. Below are the first three articles.
+Article titles and preview text were successfully scraped and stored into a python list. Below are the first three articles.
 
     [
         {
